@@ -1,6 +1,6 @@
 FROM ubuntu:12.04
 MAINTAINER Chris Meadows, "chris@meadows.com"
-ENV http_proxy http://proxy.dev.worldpay.com:8080
+#ENV http_proxy http://proxy.dev.worldpay.com:8080
 RUN echo deb http://archive.ubuntu.com/ubuntu precise universe >> /etc/apt/sources.list
 RUN apt-get update && apt-get clean
 RUN apt-get install -q -y openjdk-7-jre-headless && apt-get clean
